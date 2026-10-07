@@ -1,6 +1,7 @@
 import { applications } from './applications';
 import Applications from './components/Applications';
 import Job from './components/Job';
+import Summary from './components/Summary';
 
 /**
  * The starting point. Right now it dumps the raw data on the page so you can
@@ -22,6 +23,7 @@ export default function App() {
 			</header>
 
 			<main className="container">
+				<Summary applications={applications}/>
 				<Applications applications={applications} />
 			</main>
 		</>
