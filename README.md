@@ -12,3 +12,9 @@ Of note, there are 5 components:
 * SummaryTile - Renders one tile of the Summary header.
 
 Additionally, the Applications are listed by newest first. Some fields, such as notes, are conditional and capable of being hidden.
+
+## Runing Project
+
+In order to run the project, open a terminal in its directory and run `npm i`.
+
+Aftewards, run `npm run dev` to start the page. Follow the link to `localhost:5173`, where the page will be visible.
