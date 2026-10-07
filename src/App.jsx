@@ -22,14 +22,8 @@ export default function App() {
 			</header>
 
 			<main className="container">
-				<Applications applications={applications}>
-				</Applications>
-				<p>{applications.length} applications loaded.</p>
-				<pre>{JSON.stringify(applications[0], null, 2)}</pre>
+				<Applications applications={applications} />
 			</main>
-
-
-			
 		</>
 	);
 }
