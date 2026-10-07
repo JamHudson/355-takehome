@@ -7,7 +7,7 @@ export default function Job({ company, role, status, appliedOn, source, url, not
             <div className="grow">
                 <h3>{role}</h3>
                 <p className="company">{company}</p>
-                <p className="meta">Applied {formatDate(appliedOn)} * via {source}</p>
+                <p className="meta">Applied {formatDate(appliedOn)} {source && "* via "+source}</p>
                 {notes && <p className="note">{notes}</p>}
             </div>
             <StatusBadge status={status} />
