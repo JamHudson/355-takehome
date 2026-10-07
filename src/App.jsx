@@ -1,4 +1,6 @@
 import { applications } from './applications';
+import Applications from './components/Applications';
+import Job from './components/Job';
 
 /**
  * The starting point. Right now it dumps the raw data on the page so you can
@@ -10,6 +12,7 @@ import { applications } from './applications';
  * empty.
  */
 export default function App() {
+
 	return (
 		<>
 			<header className="site-header">
@@ -19,9 +22,14 @@ export default function App() {
 			</header>
 
 			<main className="container">
+				<Applications applications={applications}>
+				</Applications>
 				<p>{applications.length} applications loaded.</p>
 				<pre>{JSON.stringify(applications[0], null, 2)}</pre>
 			</main>
+
+
+			
 		</>
 	);
 }
