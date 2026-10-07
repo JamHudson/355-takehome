@@ -13,7 +13,7 @@ Of note, there are 5 components:
 
 Additionally, the Applications are listed by newest first. Some fields, such as notes, are conditional and capable of being hidden.
 
-## Runing Project
+## Running Project
 
 In order to run the project, open a terminal in its directory and run `npm i`.
 
